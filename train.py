@@ -75,7 +75,7 @@ def main() -> None:
             optimizer.step()
             running_loss += losses.item()
 
-        avg_loss = running_loss / max(len(train_loader), 1)
+        avg_loss = running_loss / len(train_loader)
         lr_scheduler.step()
 
         print(f"Epoch {epoch + 1}/{args.epochs} - loss: {avg_loss:.4f}")
