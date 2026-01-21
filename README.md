@@ -477,27 +477,12 @@ STD:    0.41 másodperc (SZUPERB konzisztencia!)
 - ✅ ±1 másodperc eltérés = Reprodukálható eredmények
 - ✅ GPU/CPU terhelés konzisztens
 
-**Összehasonlítás:**
-- Modern GPU (RTX 4090): ~30-50 perc (~180-300 másodperc)
-- Régi GPU (Tesla K80): ~20-30 perc (~1200-1800 másodperc)
-- **Kettő**:  Ez Kaggle kernel, GPU optimalizálva!
-
 ---
 
 ### 2. **Average Loss (Átlagos Veszteség)**
 
 ```
 Loss függvény = Mérje meg:  "Milyen rossz a jóslás?"
-```
-
-**Képzeld el:**
-```
-Igazi Label:         [100, 50, 150, 80]     (valós bounding box)
-Modell Jóslása:    [105, 48, 152, 82]     (megállapított box)
-Hiba (Loss):       sqrt((100-105)² + (50-48)² + .. .) = ~3.2 pixel
-
-Hiba 0. 0: Tökéletes jóslás
-Hiba > 0.1: Rossz jóslás
 ```
 
 **Adataink Loss értékei:**
@@ -529,24 +514,6 @@ Fold 5: 0.0679 ⚠️  Kicsit magasabb
                     Helyesen detektált rendszámok
 Precision = ─────────────────────────────────────
              Összes detektálás (helyesen + hibás)
-```
-
-**Valós Példa:**
-
-```
-Kép:   Autó rendszámmal
-┌─────────────────┐
-│      AUTO       │
-│    ┌────────┐   │ ← Valódi rendszám helye
-│    │PLATE123    │
-│    └────────┘   │
-└���────────────────┘
-
-Modell 10 detektálást csinál:
-  ✓ 8 IGAZ POZITÍV (helyesen rendszámon)
-  ✗ 2 HAMIS POZITÍV (nem rendszám, de azt hiszi)
-
-Precision = 8 / 10 = 0.80 (80%)
 ```
 
 **Adataink Precision értékei:**
@@ -625,7 +592,7 @@ MAGAS PRECISION (de alacsony RECALL):
 KIEGYENSÚLYOZOTT (magas RECALL + PRECISION):
   ├─ Kevés hibát, kevés kimaradást
   ├─ Nagyon nehéz elérni
-  └─ Ideális:  Legtöbb alkalmazás (termelés) ✓ ← MI VAGYUNK IFT! 
+  └─ Ideális:  Legtöbb alkalmazás
 ```
 
 ---
