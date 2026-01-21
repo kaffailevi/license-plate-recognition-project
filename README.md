@@ -4,8 +4,6 @@
 1. [Projekt Áttekintés](#projekt-áttekintés)
 2. [Technikai Stack](#technikai-stack)
 3. [Notebook Szerkezete (licence-plate-recognition. ipynb)](#notebook-szerkezete)
-4. [Adat Feldolgozás és Augmentáció](#adat-feldolgozás-és-augmentáció)
-5. [Custom PyTorch Dataset](#custom-pytorch-dataset)
 6. [KFold Cross-Validation](#kfold-cross-validation)
 7. [Metrikák Értelmezése](#metrikák-értelmezése)
 8. [Eredmények Elemzése](#eredmények-elemzése)
@@ -13,7 +11,7 @@
 
 ---
 
-## 🎯 Projekt Áttekintés
+## Projekt Áttekintés
 
 ### Mit csinálunk?
 Ezt a projektet **autó rendszámtáblák automatikus felismerésére** alapoztuk. Az objektum detekciós feladat a következőket jelenti:
@@ -35,7 +33,7 @@ Ezt a projektet **autó rendszámtáblák automatikus felismerésére** alapoztu
 
 ---
 
-## 🛠️ Technikai Stack
+## Technikai Stack
 
 ```
 Programozási Nyelv:      Python 3.x
@@ -50,7 +48,7 @@ Platform:              Kaggle Notebooks
 
 ---
 
-## 📓 Notebook Szerkezete
+## Notebook Szerkezete
 
 A `licence-plate-recognition.ipynb` notebook **két fő cellából** áll:
 
@@ -401,7 +399,7 @@ plt.show()
 
 ---
 
-## 🔄 KFold Cross-Validation
+## KFold Cross-Validation
 
 ### Miért a KFold? 
 
@@ -459,7 +457,7 @@ EREDMÉNY: 5 modell, 5 tesztelés
 
 ---
 
-## 📊 Metrikák Értelmezése
+## Metrikák Értelmezése
 
 ### 1. **Training Time (Tanítási idő)**
 
@@ -678,7 +676,7 @@ Fold 5: 0.8190 (82%) ⚠️  Gyengébb
 
 ---
 
-## 📈 Eredmények Elemzése
+## Eredmények Elemzése
 
 ### Teljes Metrika Táblázat
 
@@ -802,7 +800,7 @@ Javaslat: Ez legyen a PRODUKCIÓS MODELL!
 
 ---
 
-## 🚀 Javaslatok és Fejlesztési Irányok
+## Javaslatok és Fejlesztési Irányok
 
 ### 1. **Immediate (Azonnali) Fejlesztések**
 
