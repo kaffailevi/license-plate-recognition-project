@@ -1,0 +1,12 @@
+#ignore these files
+__pycache__/
+/Include/
+/Lib/
+/Scripts/
+/share/
+
+#ignore model files
+/models/*
+
+#ignore config files
+*.cfg
