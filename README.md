@@ -1,4 +1,8 @@
-# 📚 Részletes Dokumentáció – License Plate Recognition Project
+License Plate Recognition Project
+
+## Készítette:
+- **Kaffai Levente**, **Gáll Benedek**, **Gáspár Tamás** 
+- **Számítógépes Irányítási Rendszerek I**
 
 ## Tartalomjegyzék
 1. [Projekt Áttekintés](#projekt-áttekintés)
